@@ -1,0 +1,25 @@
+<?php
+/** @var array $factory_1* */
+$factory_1;
+
+
+?>
+<table border="2">
+    <tr>
+        <th>Code</th>
+        <th>Name</th>
+        <th>Number</th>
+        <th>Branch</th>
+        <th>Address</th>
+
+    </tr>
+    <?php foreach ($factory_1 as $factory):?>
+    <tr>
+        <td><?=$factory['code'];?></td>
+        <td><?=$factory['name'];?></td>
+        <td><?=$factory['number'];?></td>
+        <td><?=$factory['branch'];?></td>
+        <td><?=$factory['address'];?></td>
+    </tr>
+<?php endforeach;?>
+</table>
