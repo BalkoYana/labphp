@@ -1,0 +1,42 @@
+array (
+  0 => 
+  array (
+    'code' => 1,
+    'name' => 'P&b',
+    'number' => 16,
+    'branch' => 'IT',
+    'address' => 'street',
+  ),
+  1 => 
+  array (
+    'code' => 2,
+    'name' => 'company',
+    'number' => 19,
+    'branch' => 'pharmaceutics',
+    'address' => NULL,
+  ),
+  2 => 
+  array (
+    'code' => 3,
+    'name' => 'P',
+    'number' => 168,
+    'branch' => 'IT',
+    'address' => 'street1',
+  ),
+  3 => 
+  array (
+    'code' => 4,
+    'name' => 'ABC',
+    'number' => 17,
+    'branch' => 'IT',
+    'address' => 'street5',
+  ),
+  4 => 
+  array (
+    'code' => 5,
+    'name' => 'Name of company',
+    'number' => 76,
+    'branch' => 'pharmaceutics',
+    'address' => 'street89',
+  ),
+)

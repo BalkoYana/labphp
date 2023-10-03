@@ -1,4 +1,5 @@
 
+
 <?php
 // Асоціативний масив “Підприємство” (Код, назва підприємства;
 // кількість співробітників; галузь; адреса). Запит підприємств
@@ -95,10 +96,10 @@ if(isset($_POST['code'])){
 
 $factory_1 =array_filter($factory_1,function ($element){
     $return_flag =true;
-    if(isset($_GET['branch'])&& $element!==$_GET['branch']){
+    if(isset($_GET['branch'])&& $element['branch'] !==$_GET['branch']){
         $return_flag=false;
     }
-    if($return_flag && isset($_GET['number'])&&$_GET['number']<$element['number']&& $element['number'] <$_GET['number']){
+    if(isset($_GET['number'])&& $element['number'] <$_GET['number']){
         $return_flag=false;
     }
     return $return_flag;
@@ -110,3 +111,17 @@ include '/xampp/htdocs/lab1/edit_form.phtml';
 if($message){
     print $message;
 }
+
+//////////////////
+//Реалізувати функції збереження до файлу та завантаження із файлу масиву об'єктів з лабораторної роботи
+$f=fopen("file.txt","w");
+$array = var_export($factory_1,true);
+file_put_contents("file.txt",$array);
+fclose($f);
+$f2=fopen("file.txt","r");
+$downloaded =file_get_contents("file.txt",true);
+
+fclose($f2)
+?>
+
+
