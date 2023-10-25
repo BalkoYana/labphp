@@ -1,0 +1,24 @@
+<?php
+/** @var array $subject_1* */
+$subject_1;
+
+
+?>
+<table border="2">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Teacher</th>
+        <th>Number</th>
+
+
+    </tr>
+    <?php foreach ($subject_1 as $subject):?>
+    <tr>
+        <td><?=$subject['id'];?></td>
+        <td><?=$subject['name'];?></td>
+        <td><?=$subject['teacher'];?></td>
+        <td><?=$subject['number'];?></td>
+    </tr>
+<?php endforeach;?>
+</table>
